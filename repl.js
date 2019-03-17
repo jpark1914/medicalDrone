@@ -19,16 +19,16 @@ var parser = new PaVEParser();
 client.takeoff();
 
 client
-    .after(5000, function () {
-    parser
-        .on('data', function(data) {
-            output.write(data.payload);
-        })
-        .on('end', function() {
-            output.end();
-        });
-    video.pipe(parser);
-})
+//     .after(5000, function () {
+//     parser
+//         .on('data', function(data) {
+//             output.write(data.payload);
+//         })
+//         .on('end', function() {
+//             output.end();
+//         });
+//     video.pipe(parser);
+// })
     .after(2000, function (){
         this.front();
     })
